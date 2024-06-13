@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoop Doop</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="Assests/style.css">
+    <!-- Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Owl  -->
+    <link rel="stylesheet" href="Assests/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Assests/owl/css/owl.theme.default.min.css">
+</head>
+<body>
+    <!-- -Navbar-  -->
+    <section id="navbar" >
+        <nav class="flex py-4 px-10 items-center justify-between">
+            <div class="nav__logo ">
+                <h1 class="text-4xl font-bold ">Scoopy</h1>
+            </div>
+            <div class="nav__links flex gap-10">
+                <div class="nav__link active">
+                    <a href="javascript:void(0)">Home</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)">About</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)">Menu</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)">Categories</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)">Contact</a>
+                </div>
+            </div>
+            <div class="nav__navigate flex gap-4">
+                <a href="javascript:void(0)"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </nav>
+    </section>
+    <!-- -Banner- -->
+     <section id="banner" class="bg-red-500  relative">
+        <div class="banner__one p-72 duration-700">
+            <div class="image absolute m-auto left-0 right-0 top-0 bottom-0 z-10">
+                <img src="Assests/images/banner-2.png" alt="banner-1" class="w-full h-full bannerimg ">
+            </div>
+            <div class="overlay_one absolute m-auto left-0 right-0 top-0 bottom-0"></div>
+            <div class="extra absolute top-[-70px] opacity-55 left-10 scale-75">
+                <img src="Assests/images/cone.png" alt="">
+            </div>
+            <div class="extra absolute bottom-[5%] opacity-55 right-10 scale-75 rotate-90">
+                <img src="Assests/images/cone.png" alt="">
+            </div>
+        </div>
+        <div class="navigate flex gap-1 absolute bottom-14 left-14">
+            <div class="navigate__one w-[15px] h-[15px] bg-white rounded-full cursor-pointer opacity-50"></div>
+            <div class="navigate__two w-[15px] h-[15px] bg-white rounded-full cursor-pointer"></div>
+            <div class="navigate__three w-[15px] h-[15px] bg-white rounded-full cursor-pointer"></div>
+        </div>
+     </section>
+    <!-- -Flavours- -->
+    <section id="flavours">
+        <div class="owl-carousel owl-theme flavourscarousel px-10 py-10">
+            <div class="item">
+                <div class="box bg-[#78f578] rounded-t-full relative ">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
+                        <img src="Assests/images/green.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#bbecbb] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box bg-[#a05050] rounded-t-full relative">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-[10]">
+                        <img src="Assests/images/brown.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#ce7f7f] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box bg-[#ff95a7] rounded-t-full relative">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
+                        <img src="Assests/images/pink.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#ffc0cc] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box bg-[#df3636] rounded-t-full relative">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
+                        <img src="Assests/images/red.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#ca5c5c] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box bg-[#8989da] rounded-t-full relative">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
+                        <img src="Assests/images/blue.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#b1b1e6] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Jquery  -->
+     <script src="Assests/Jquery/jquery.min.js"></script>
+    <!-- Owl  -->
+     <script src="Assests/owl/js/owl.carousel.min.js"></script>
+    <!-- script  -->
+    <script src="Assests/script.js"></script>
+    <!-- Tailwind  -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Owl  -->
+    <script>
+        $('.flavourscarousel').owlCarousel({
+            loop:true,
+            margin:50,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+</body>
+</html>
