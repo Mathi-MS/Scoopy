@@ -7,8 +7,7 @@
     <!-- css  -->
     <link rel="stylesheet" href="Assests/style.css">
     <!-- Tailwind  -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="Assests/Tailwind/tailwind.min.css">
     <!-- Font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Owl  -->
@@ -66,8 +65,48 @@
         </div>
      </section>
     <!-- -Flavours- -->
-    <section id="flavours">
-        <div class="owl-carousel owl-theme flavourscarousel px-10 py-10">
+    <section id="flavours" class="bg-[#f0a397] px-20 overflow-hidden">
+        <div class="owl-carousel owl-theme flavourscarousel py-14">
+            <div class="item">
+                <div class="box bg-[#78f578] rounded-t-full relative ">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
+                        <img src="Assests/images/green.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#bbecbb] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box bg-[#a05050] rounded-t-full relative">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-[10]">
+                        <img src="Assests/images/brown.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#ce7f7f] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box bg-[#ff95a7] rounded-t-full relative">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
+                        <img src="Assests/images/pink.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#ffc0cc] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box bg-[#df3636] rounded-t-full relative">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
+                        <img src="Assests/images/red.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#ca5c5c] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box bg-[#8989da] rounded-t-full relative">
+                    <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
+                        <img src="Assests/images/blue.png" alt="ice cream" class="w-[100%]">
+                    </div>
+                    <div class="overlay blur-md w-[70%] h-[70%] bg-[#b1b1e6] rounded-full absolute left-0 right-0 top-0 bottom-0 m-auto"></div>
+                </div>
+            </div>
             <div class="item">
                 <div class="box bg-[#78f578] rounded-t-full relative ">
                     <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
@@ -109,6 +148,12 @@
                 </div>
             </div>
         </div>
+        <div class="almond__img absolute bottom-[-10%] right-[-5%] w-[250px] z-10">
+            <img src="Assests/images/almond-back.png" alt="almond" class="w-[100%]">
+        </div>
+        <div class="overlay w-[30%] h-[90%] absolute bg-[#ebb9b1] inline-block top-0 bottom-0 left-0 right-0 m-auto rounded-full blur-2xl">
+
+        </div>
     </section>
     <!-- Jquery  -->
      <script src="Assests/Jquery/jquery.min.js"></script>
@@ -117,14 +162,16 @@
     <!-- script  -->
     <script src="Assests/script.js"></script>
     <!-- Tailwind  -->
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="Assests/Tailwind/index.min.js"></script>
+    <script src="Assests/Tailwind/New.txt"></script>
     <!-- Owl  -->
     <script>
         $('.flavourscarousel').owlCarousel({
             loop:true,
             margin:50,
             nav:true,
+            dots:false,
+            navText: [`<i class="fa-solid fa-caret-left"></i>`,`<i class="fa-solid fa-caret-right"></i>`],
             responsive:{
                 0:{
                     items:1

@@ -103,6 +103,47 @@
     animation: .5s linear  smallbigger;
     /* transform: scale(0.5); */
 }
+/* -flavours  */
+#flavours{
+    position: relative;
+}
+#flavours .owl-theme .owl-next{
+    font-size:20px;
+    color:#f8edd1;
+    background-color:#7B4B41;
+    width:35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #7B4B41;
+    transition: .5s;
+    border-radius: 200px;
+}
+#flavours .owl-theme .owl-prev{
+    font-size:20px;
+    color:#f8edd1;
+    background-color:#7B4B41;
+    width:35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #7B4B41;
+    transition: .5s;
+    border-radius: 200px;
+}
+#flavours .owl-theme .owl-prev:hover{
+    background-color:transparent;
+    color:#7B4B41;
+}
+#flavours .owl-theme .owl-next:hover{
+    background-color:transparent;
+    color:#7B4B41;
+}
+#flavours .owl-nav{
+    display: flex;
+}
 @keyframes smallbigger {
     0%{
         transform: scale(0.8);
