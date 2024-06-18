@@ -27,6 +27,12 @@
 	font-family:recoleta;
 	src: url('../Assests/Font/recoleta-regulardemo.otf')
 }
+body{
+    margin: auto !important;
+    max-width: 1600px;
+    
+}
+
 /* -Navbar  */
 #navbar{
     position: sticky;
