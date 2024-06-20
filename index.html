@@ -18,11 +18,11 @@
 <body class="overflow-x-hidden">
     <!-- -Navbar-  -->
     <section id="navbar" >
-        <nav class="flex py-4 px-10 items-center justify-between">
+        <nav class="flex py-4 px-8 md:px-14 lg:px-20 items-center justify-between">
             <div class="nav__logo ">
                 <h1 class="text-4xl font-bold ">Scoopy</h1>
             </div>
-            <div class="nav__links flex gap-10">
+            <div class="nav__links md:flex gap-10 hidden">
                 <div class="nav__link active">
                     <a href="javascript:void(0)">Home</a>
                 </div>
@@ -39,23 +39,26 @@
                     <a href="javascript:void(0)">Contact</a>
                 </div>
             </div>
-            <div class="nav__navigate flex gap-4">
+            <div class="nav__navigate md:flex gap-4 hidden">
                 <a href="javascript:void(0)"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars-staggered"></i>
             </div>
         </nav>
     </section>
     <!-- -Banner- -->
      <section id="banner" class="bg-red-500  relative">
-        <div class="banner__one p-72 duration-700">
-            <div class="image absolute m-auto left-0 right-0 top-0 bottom-0 z-10">
-                <img src="Assests/images/banner-2.png" alt="banner-1" class="w-full h-full bannerimg ">
+        <div class="banner__one p-52 lg:p-72 duration-700">
+            <div class="image absolute m-auto left-0 right-0 top-0 bottom-0 z-10 lg:w-max lg:h-max w-[40%] h-[40%]">
+                <img src="Assests/images/banner-2.png" alt="banner-1" class="w-full h-full bannerimg object-contain">
             </div>
             <div class="overlay_one absolute m-auto left-0 right-0 top-0 bottom-0"></div>
-            <div class="extra absolute top-[-70px] opacity-55 left-10 scale-75">
+            <div class="extra absolute top-[-70px] opacity-55 left-[-50px] lg:left-10 scale-50 lg:scale-75">
                 <img src="Assests/images/cone.png" alt="">
             </div>
-            <div class="extra absolute bottom-[5%] opacity-55 right-10 scale-75 rotate-90">
+            <div class="extra absolute bottom-[5%] opacity-55 right-[-50px] lg:right-10 scale-50 lg:scale-75 rotate-90">
                 <img src="Assests/images/cone.png" alt="">
             </div>
         </div>
@@ -66,8 +69,8 @@
         </div>
      </section>
     <!-- -Flavours- -->
-    <section id="flavours" class="bg-[#f8edd1] px-20 ">
-        <div class="owl-carousel owl-theme flavourscarousel py-14">
+    <section id="flavours" class="bg-[#f8edd1] px-8 md:px-14 lg:px-20 ">
+        <div class="owl-carousel owl-theme flavourscarousel py-8 lg:py-14">
             <div class="item">
                 <div class="box bg-[#78f578] rounded-t-full relative ">
                     <div class="box-img w-[100px] pt-20 mx-auto relative z-10">
@@ -149,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <div class="almond__img absolute bottom-[-10%] right-[-5%] w-[250px] z-10">
+        <div class="almond__img absolute bottom-[-10%] right-[-5%] w-[250px] z-10 hidden">
             <img src="Assests/images/almond-back.png" alt="almond" class="w-[100%]">
         </div>
         <div class="overlay w-[30%] h-[90%] absolute bg-[#ebb9b1] inline-block top-0 bottom-0 left-0 right-0 m-auto rounded-full blur-2xl">
@@ -157,51 +160,51 @@
         </div>
     </section>
     <!-- -Gallery-  -->
-     <section id="gallery" class="bg-white px-20 pt-10 pb-20 relative">
-        <h2 class="text-center text-7xl text-[#E69A4D] font-[Poppins] font-bold">We are Serve 100% Natural flavours</h2>
-        <div class="flex pt-20 gap-10 items-center">
-            <div class="w-[100%] flex gap-10 flex-col">
-                <img src="Assests/images/gallery-1.jpg" alt="gallery" class="rounded-3xl">
-                <img src="Assests/images/gallery-3.jpg" alt="gallery" class="rounded-3xl">
+     <section id="gallery" class="bg-white px-8 md:px-14 lg:px-20 pt-10 pb-8 sm:pb-20 relative">
+        <h2 class="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#E69A4D] font-[Poppins] font-bold">We are Serve 100% Natural flavours</h2>
+        <div class="flex pt-4 sm:pt-20 gap-5 lg:gap-10 items-center ">
+            <div class="w-[100%] flex gap-5 lg:gap-10 flex-col">
+                <img src="Assests/images/gallery-1.jpg" alt="gallery" class="rounded-lg sm:rounded-3xl">
+                <img src="Assests/images/gallery-3.jpg" alt="gallery" class="rounded-lg sm:rounded-3xl">
             </div>
             <div class="w-[100%]">
-                <img src="Assests/images/gallery-2.jpg" alt="gallery" class="rounded-3xl">
+                <img src="Assests/images/gallery-2.jpg" alt="gallery" class="rounded-lg sm:rounded-3xl">
             </div>
             <div class="w-[100%] flex gap-4 flex-col">
                 <div>
-                    <img src="Assests/images/gallery-6.jpg" alt="gallery" class="rounded-3xl">
+                    <img src="Assests/images/gallery-6.jpg" alt="gallery" class="rounded-lg sm:rounded-3xl">
                 </div>
-                <div class="w-[100%] flex gap-5 ">
-                    <img src="Assests/images/gallery-5.jpg" alt="gallery" class="rounded-xl w-[50%]">
-                    <img src="Assests/images/gallery-4.jpg" alt="gallery" class="rounded-xl w-[50%]">
+                <div class="w-[100%] flex gap-2 sm:gap-5 ">
+                    <img src="Assests/images/gallery-5.jpg" alt="gallery" class="rounded-lg sm:rounded-xl w-[45%] sm:w-[50%]">
+                    <img src="Assests/images/gallery-4.jpg" alt="gallery" class="rounded-lg sm:rounded-xl w-[45%] sm:w-[50%]">
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-[-150px] left-[-100px] scoop">
-            <img src="Assests/images/banner-1-scoop.png" alt="scoop" >
+        <div class="absolute bottom-[-150px] left-[-100px] scoop lg:block hidden">
+            <img src="Assests/images/banner-1-scoop.png" alt="scoop" class="lg:block hidden">
         </div>
      </section>
      <!-- -Categories-  -->
-      <section id="categories" class="px-20 py-20 bg-[#f8edd1]">
-        <h2 class="text-5xl text-center mb-10 font-[recoleta] font-semibold text-[#725D68]">Categories For<span class="text-[#fe831d]"> You</span></h2>
-        <div class="owl-carousel owl-theme owl-cat px-60">
+      <section id="categories" class="px-8 py-8 md:px-14 md:py-14 lg:px-20 lg:py-20 bg-[#f8edd1]">
+        <h2 class="text-4xl sm:text-5xl text-center sm:mb-10 font-[recoleta] font-semibold text-[#725D68]">Categories For<span class="text-[#fe831d]"> You</span></h2>
+        <div class="owl-carousel owl-theme owl-cat">
             <div class="item">
-                <img src="Assests/images/cate-1.jpg" alt="categories" class="w-[200px] h-[200px] object-cover rounded-3xl">
+                <img src="Assests/images/cate-1.jpg" alt="categories" class=" object-cover rounded-3xl">
             </div>
             <div class="item">
-                <img src="Assests/images/cate-2.jpg" alt="categories" class="w-[200px] h-[200px] object-cover rounded-3xl">
+                <img src="Assests/images/cate-2.jpg" alt="categories" class=" object-cover rounded-3xl">
             </div>
             <div class="item">
-                <img src="Assests/images/cate-4.jpg" alt="categories" class="w-[200px] h-[200px] object-cover rounded-3xl">
+                <img src="Assests/images/cate-4.jpg" alt="categories" class=" object-cover rounded-3xl">
             </div>
             <div class="item">
-                <img src="Assests/images/cate-3.jpg" alt="categories" class="w-[200px] h-[200px] object-cover rounded-3xl">
+                <img src="Assests/images/cate-3.jpg" alt="categories" class=" object-cover rounded-3xl">
             </div>
         </div>
       </section>
       <!-- -gallery-  -->
-    <section id="gallerytwo" class="bg-white px-20 py-20 relative">
-        <div class="flex gap-10 items-end">
+    <section id="gallerytwo" class="bg-white px-8 py-8 md:px-14 md:py-14 lg:px-20 lg:py-20 relative">
+        <div class="flex gap-3 sm:gap-10 items-end">
             <div class="w-[100%] flex flex-col gap-5">
                 <div class=" text-right">
                     <img src="Assests/images/gallerytwo-1.jpg"  alt="gallery" class="rounded-xl w-[60%] object-cover inline-block">
@@ -224,13 +227,13 @@
         </div>
     </section>
     <!-- subscribe  -->
-     <section id="subscribe" class="px-20 ">
-        <div class="p-20 bg-[#f8edd1] text-center rounded-3xl">
+     <section id="subscribe" class="px-8 md:px-14 lg:px-20 ">
+        <div class="p-6 sm:p-14 lg:p-20 bg-[#f8edd1] text-center rounded-3xl">
             <h2 class="text-4xl font-[recoleta] font-bold pb-5">Join Membership And Connect To  Every Member</h2>
             <p class="text-1xl font-[Poppins] pb-5">Subscribe To Our Newsletter To Be The First To Receive Any Information About Us</p>
-            <div class="relative w-[60%] m-auto">
-                <input type="text" placeholder="Enter your Email" class="outline-none py-5 px-5 rounded-full  text-2xl text-[Poppins] w-[100%]">
-                <a href="javascript:void(0)" title="Subscribe" class="bg-[#fe831d] w-max p-4 rounded-full text-white font-[poppins] absolute right-2 top-0
+            <div class="relative w-[100%] sm:w-[80%] md:w-[60%] m-auto">
+                <input type="text" placeholder="Enter your Email" class="outline-none py-4 px-4 sm:py-5 sm:px-5 rounded-full  md:text-2xl text-[Poppins] w-[100%]">
+                <a href="javascript:void(0)" title="Subscribe" class="bg-[#fe831d] w-max p-2 sm:p-4 rounded-full text-white font-[poppins] absolute right-2 top-0
                 m-auto bottom-0 h-max">
                     <span>Subscribe</span>
                 </a>
@@ -238,28 +241,27 @@
         </div>
      </section>
      <!-- footer  -->
-      <section id="footer" class="px-20 py-20 bg-[#f8edd1] mt-20">
-        <div class="flex justify-between items-center">
+     <section id="footer" class="px-8 py-8 md:px-14 md:py-14 lg:px-20 lg:py-20 mt-8 md:mt-20 bg-[#f8edd1]">
+        <div class="flex justify-between items-center flex-wrap gap-10 lg:gap-10">
             <div>
                 <h2 class="text-5xl font-[recoleta] font-semibold text-[#fe831d]">Scoopy</h2>
-                <p class=" font-[Poppins] pt-5">2024 Scoopy,Inc. | Privacy Policy | Terms Of Use</p>
             </div>
             <div>
-                <ul class="flex gap-5">
+                <ul class="flex sm:gap-5 flex-wrap gap-3">
                     <li>
-                        <a class="font-[recoleta] font-semibold hover:text-[#fe831d]" href="javascript:void(0)" title="Home">Home</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Home">Home</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold hover:text-[#fe831d]" href="javascript:void(0)" title="About">About</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="About">About</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold hover:text-[#fe831d]" href="javascript:void(0)" title="Menu">Menu</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Menu">Menu</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold hover:text-[#fe831d]" href="javascript:void(0)" title="Categories">Categories</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Categories">Categories</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold hover:text-[#fe831d]" href="javascript:void(0)" title="Contact">Contact</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -267,28 +269,29 @@
                 <h2 class="text-3xl font-[recoleta] font-bold text-[#fe831d]">Follow Us On</h2>
                 <ul class="flex gap-5 mt-3">
                     <li>
-                        <a href="javascript:void(0)" title="pintrest" class="w-[30px] h-[30px] rounded-full items-center justify-center flex bg-[#fe831d]">
+                        <a href="javascript:void(0)" title="pintrest" class="w-[30px] h-[30px] rounded-full items-center justify-center flex bg-[#fe831d]" target="_blank">
                             <i class="fa-brands fa-pinterest-p text-[#f8edd1]"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" title="instagram" class="w-[30px] h-[30px] rounded-full items-center justify-center flex bg-[#fe831d]">
+                        <a href="javascript:void(0)" title="instagram" class="w-[30px] h-[30px] rounded-full items-center justify-center flex bg-[#fe831d]" target="_blank">
                             <i class="fa-brands fa-instagram text-[#f8edd1]"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" title="twitter" class="w-[30px] h-[30px] rounded-full items-center justify-center flex bg-[#fe831d]">
+                        <a href="javascript:void(0)" title="twitter" class="w-[30px] h-[30px] rounded-full items-center justify-center flex bg-[#fe831d]" target="_blank">
                             <i class="fa-brands fa-x-twitter text-[#f8edd1]"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" title="facebook" class="w-[30px] h-[30px] rounded-full items-center justify-center flex bg-[#fe831d]">
+                        <a href="javascript:void(0)" title="facebook" class="w-[30px] h-[30px] rounded-full items-center justify-center flex bg-[#fe831d]" target="_blank">
                             <i class="fa-brands fa-facebook-f text-[#f8edd1]"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
+        <p class=" font-[Poppins] pt-5 text-[#725D68]">2024 Scoopy,Inc. | Privacy Policy | Terms Of Use</p>
       </section>
     <!-- Jquery  -->
      <script src="Assests/Jquery/jquery.min.js"></script>
@@ -309,33 +312,34 @@
             navText: [`<i class="fa-solid fa-caret-left"></i>`,`<i class="fa-solid fa-caret-right"></i>`],
             responsive:{
                 0:{
-                    items:1
+                    items:2
                 },
                 600:{
                     items:3
                 },
-                1000:{
+                1024:{
                     items:5
                 }
             }
         })
         $('.owl-cat').owlCarousel({
             loop:true,
-            margin:20,
+            margin:0,
             nav:true,
             dots:false,
             navText: [`<i class="fa-solid fa-caret-left"></i>`,`<i class="fa-solid fa-caret-right"></i>`],
             center:true,
-            autoplay:true,
+            autoplay:false,
             responsive:{
                 0:{
+                    items:1,
+                    center:false,
+                },
+                640:{
                     items:3
                 },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:3
+                1024:{
+                    items:5
                 }
             }
         })
