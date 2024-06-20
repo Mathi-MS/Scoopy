@@ -46,3 +46,22 @@ navigatethree.addEventListener("click",()=>{
 
 })
 
+// Navbar 
+var mobnav = document.getElementById("mobnav")
+var closebar = document.querySelector(".closebar")
+var togglebar = document.querySelector(".togglebar")
+var navlink = document.querySelectorAll(".nav__link")
+
+togglebar.addEventListener("click", () =>{
+    mobnav.style.display="flex"
+})
+closebar.addEventListener("click", () =>{
+    mobnav.style.display="none"
+})
+navlink.forEach((element)=>{
+    element.addEventListener("click",()=>{
+        mobnav.style.display="none"
+    })
+})
+
+

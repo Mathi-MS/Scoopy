@@ -15,35 +15,64 @@
     <link rel="stylesheet" href="Assests/owl/css/owl.theme.default.min.css">
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden relative ">
+    <!-- mobile-Navbar  -->
+     <section id="mobnav" class="fixed h-[100%] top-0 z-[1000] w-[100%] bg-[#f8edd1]  items-center justify-center hidden" >
+        <div class="relative">
+            <div class="nav__links flex gap-5 flex-col text-center font-[recoleta] text-2xl">
+                <div class="nav__link active  text-[#fe831d]">
+                    <a href="#" title="Home">Home</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)" title="About">About</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)" title="Categories">Categories</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)" title="Blog">Blog</a>
+                </div>
+                <div class="nav__link">
+                    <a href="contact.html" title="Contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav__navigate flex gap-4 justify-center mt-5 text-2xl">
+                <a href="javascript:void(0)"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+        <div class="absolute top-[5%] right-[15%] text-2xl cursor-pointer closebar">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+     </section>
     <!-- -Navbar-  -->
     <section id="navbar" >
         <nav class="flex py-4 px-8 md:px-14 lg:px-20 items-center justify-between">
-            <div class="nav__logo ">
+            <a class="nav__logo " href="index.html" title="logo">
                 <h1 class="text-4xl font-bold ">Scoopy</h1>
-            </div>
+            </a>
             <div class="nav__links md:flex gap-10 hidden">
                 <div class="nav__link active">
-                    <a href="javascript:void(0)">Home</a>
+                    <a href="#" title="Home">Home</a>
                 </div>
                 <div class="nav__link">
-                    <a href="javascript:void(0)">About</a>
+                    <a href="javascript:void(0)" title="About">About</a>
                 </div>
                 <div class="nav__link">
-                    <a href="javascript:void(0)">Menu</a>
+                    <a href="javascript:void(0)" title="Categories">Categories</a>
                 </div>
                 <div class="nav__link">
-                    <a href="javascript:void(0)">Categories</a>
+                    <a href="javascript:void(0)" title="Blog">Blog</a>
                 </div>
                 <div class="nav__link">
-                    <a href="javascript:void(0)">Contact</a>
+                    <a href="contact.html" title="Contact">Contact</a>
                 </div>
             </div>
             <div class="nav__navigate md:flex gap-4 hidden">
                 <a href="javascript:void(0)"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a>
             </div>
-            <div class="md:hidden">
+            <div class="md:hidden togglebar">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
         </nav>
@@ -68,10 +97,21 @@
             <div class="navigate__three w-[15px] h-[15px] bg-white rounded-full cursor-pointer"></div>
         </div>
      </section>
+     <!-- About  -->
      <section id="about" class="relative lg:px-20 lg:py-20 md:px-14 md:py-14 px-8 py-8 text-center">
-        <h2 class="text-5xl font-[recoleta] font-semibold mt-[10%]  sm:mt-[18%] lg:mt-[20%] xl:mt-[22%] mb-3 text-[#725D68] relative z-20">About us</h2>
+        <h2 class="text-5xl font-[recoleta] font-semibold mt-[10%]  sm:mt-[18%] lg:mt-[20%] xl:mt-[22%] mb-3 text-[#725D68] relative z-20">About <span class="text-[#fe831d]">Us</span></h2>
         <p class=" font-[poppins] text-[#725D68] relative z-20">All ingredients are hand-picked, the fruits are manually cleaned and whole fruits are used in production. That’s the reason why we call it 'Handcrafted Ice Creams’. Since there are no preservatives in our ice cream, the shelf life of our product is just 60 days. When compared with other brands, which have a longer shelf life, it is a herculean effort to manufacture, distribute and sell our ice cream across the nation within 60 days. With more experience and better processes, we have been successful in overcoming various challenges to bring Scoopy to you, making every challenge worth it and after tasting Scoopy you surely would agree!</p>
         <img src="Assests/images/layer.png" alt="layer" class="absolute top-0 left-0 w-[100%] z-10">
+        <div class="flex justify-between mt-10 md:flex-row flex-col md:gap-0 gap-5">
+            <div class="box bg-[#f8edd1] w-[100%] md:w-[45%] px-10 py-5 rounded-lg font-[Poppins] ">
+                <h2 class="text-4xl font-[recoleta] font-bold text-[#fe831d]">Mission</h2>
+                <p class="text-[#725D68]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque repudiandae eveniet dicta omnis eligendi perferendis, laborum quasi odit delectus quam nulla itaque saepe? Rerum, sequi. Alias consectetur maxime sit beatae?</p>
+            </div>
+            <div class="box bg-[#f8edd1] w-[100%] md:w-[45%] px-10 py-5 rounded-lg font-[Poppins]">
+                <h2 class="text-4xl font-[recoleta] font-bold text-[#fe831d]">Vision</h2>
+                <p class="text-[#725D68]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque repudiandae eveniet dicta omnis eligendi perferendis, laborum quasi odit delectus quam nulla itaque saepe? Rerum, sequi. Alias consectetur maxime sit beatae?</p>
+            </div>
+        </div>
      </section>
     <!-- -Flavours- -->
     <section id="flavours" class="bg-[#f8edd1] px-8 md:px-14 lg:px-20 ">
@@ -254,19 +294,19 @@
             <div>
                 <ul class="flex sm:gap-5 flex-wrap gap-3">
                     <li>
-                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Home">Home</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="#" title="Home">Home</a>
                     </li>
                     <li>
                         <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="About">About</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Menu">Menu</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Blog">Blog</a>
                     </li>
                     <li>
                         <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Categories">Categories</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Contact">Contact</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="contact.html" title="Contact">Contact</a>
                     </li>
                 </ul>
             </div>

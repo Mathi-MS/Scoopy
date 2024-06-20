@@ -15,35 +15,64 @@
     <link rel="stylesheet" href="Assests/owl/css/owl.theme.default.min.css">
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden relative ">
+    <!-- mobile-Navbar  -->
+     <section id="mobnav" class="fixed h-[100%] top-0 z-[1000] w-[100%] bg-[#f8edd1]  items-center justify-center hidden" >
+        <div class="relative">
+            <div class="nav__links flex gap-5 flex-col text-center font-[recoleta] text-2xl">
+                <div class="nav__link active">
+                    <a href="index.html" title="Home">Home</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)" title="About">About</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)" title="Categories">Categories</a>
+                </div>
+                <div class="nav__link">
+                    <a href="javascript:void(0)" title="Blog">Blog</a>
+                </div>
+                <div class="nav__link text-[#fe831d]">
+                    <a href="#" title="Contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav__navigate flex gap-4 justify-center mt-5 text-2xl">
+                <a href="javascript:void(0)"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+        <div class="absolute top-[5%] right-[15%] text-2xl cursor-pointer closebar">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+     </section>
     <!-- -Navbar-  -->
     <section id="navbar" >
         <nav class="flex py-4 px-8 md:px-14 lg:px-20 items-center justify-between">
-            <div class="nav__logo ">
+            <a class="nav__logo " href="index.html" title="logo">
                 <h1 class="text-4xl font-bold ">Scoopy</h1>
-            </div>
+            </a>
             <div class="nav__links md:flex gap-10 hidden">
                 <div class="nav__link active">
-                    <a href="javascript:void(0)">Home</a>
+                    <a href="index.html" title="Home">Home</a>
                 </div>
                 <div class="nav__link">
-                    <a href="javascript:void(0)">About</a>
+                    <a href="javascript:void(0)" title="About">About</a>
                 </div>
                 <div class="nav__link">
-                    <a href="javascript:void(0)">Menu</a>
+                    <a href="javascript:void(0)" title="Categories">Categories</a>
                 </div>
                 <div class="nav__link">
-                    <a href="javascript:void(0)">Categories</a>
+                    <a href="javascript:void(0)" title="Blog">Blog</a>
                 </div>
                 <div class="nav__link">
-                    <a href="javascript:void(0)">Contact</a>
+                    <a href="#" title="Contact">Contact</a>
                 </div>
             </div>
             <div class="nav__navigate md:flex gap-4 hidden">
                 <a href="javascript:void(0)"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a>
             </div>
-            <div class="md:hidden">
+            <div class="md:hidden togglebar">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
         </nav>
@@ -103,7 +132,7 @@
         </div>
       </section>
      <!-- footer  -->
-      <section id="footer" class="px-8 py-8 md:px-14 md:py-14 lg:px-20 lg:py-20 bg-[#f8edd1]">
+     <section id="footer" class="px-8 py-8 md:px-14 md:py-14 lg:px-20 lg:py-20 mt-8 md:mt-20 bg-[#f8edd1]">
         <div class="flex justify-between items-center flex-wrap gap-10 lg:gap-10">
             <div>
                 <h2 class="text-5xl font-[recoleta] font-semibold text-[#fe831d]">Scoopy</h2>
@@ -111,19 +140,19 @@
             <div>
                 <ul class="flex sm:gap-5 flex-wrap gap-3">
                     <li>
-                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Home">Home</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="index.html" title="Home">Home</a>
                     </li>
                     <li>
                         <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="About">About</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Menu">Menu</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Blog">Blog</a>
                     </li>
                     <li>
                         <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Categories">Categories</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="javascript:void(0)" title="Contact">Contact</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="#" title="Contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -160,9 +189,27 @@
     <!-- Owl  -->
      <script src="Assests/owl/js/owl.carousel.min.js"></script>
     <!-- script  -->
-    <script src="Assests/script.js"></script>
+    <!-- <script src="Assests/script.js"></script> -->
     <!-- Tailwind  -->
      <script src="Assests/Tailwind/index.min.js"></script>
     <script src="Assests/Tailwind/New.txt"></script>
+    <script>
+        var mobnav = document.getElementById("mobnav")
+        var closebar = document.querySelector(".closebar")
+        var togglebar = document.querySelector(".togglebar")
+        var navlink = document.querySelectorAll(".nav__link")
+
+        togglebar.addEventListener("click", () =>{
+            mobnav.style.display="flex"
+        })
+        closebar.addEventListener("click", () =>{
+            mobnav.style.display="none"
+        })
+        navlink.forEach((element)=>{
+            element.addEventListener("click",()=>{
+                mobnav.style.display="none"
+            })
+        })
+    </script>
 </body>
 </html>
