@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoop Doop | About</title>
+    <title>Scoop Doop</title>
     <!-- css  -->
     <link rel="stylesheet" href="Assests/style.css">
     <!-- Tailwind  -->
@@ -23,8 +23,8 @@
                 <div class="nav__link ">
                     <a href="index.html" title="Home">Home</a>
                 </div>
-                <div class="nav__link text-[#fe831d] active">
-                    <a href="#" title="About">About</a>
+                <div class="nav__link">
+                    <a href="about.html" title="About">About</a>
                 </div>
                 <div class="nav__link">
                     <a href="products.html" title="products">products</a>
@@ -32,13 +32,13 @@
                 <div class="nav__link">
                     <a href="blog.html" title="Blog">Blog</a>
                 </div>
-                <div class="nav__link ">
+                <div class="nav__link">
                     <a href="contact.html" title="Contact">Contact</a>
                 </div>
             </div>
             <div class="nav__navigate flex gap-4 justify-center mt-5 text-2xl">
                 <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
         <div class="absolute top-[5%] right-[15%] text-2xl cursor-pointer closebar">
@@ -55,54 +55,41 @@
                 <div class="nav__link ">
                     <a href="index.html" title="Home" class="relative">Home</a>
                 </div>
-                <div class="nav__link active">
-                    <a href="#" title="About" class="relative">About</a>
+                <div class="nav__link">
+                    <a href="about.html" title="About" class="relative">About</a>
                 </div>
                 <div class="nav__link">
                     <a href="products.html" title="products" class="relative">products</a>
                 </div>
-                <div class="nav__link ">
+                <div class="nav__link">
                     <a href="blog.html" title="Blog" class="relative">Blog</a>
                 </div>
-                <div class="nav__link ">
+                <div class="nav__link">
                     <a href="contact.html" title="Contact" class="relative">Contact</a>
                 </div>
             </div>
             <div class="nav__navigate md:flex gap-4 hidden text-[#725D68] font-medium font-[Poppins]">
                 <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
             </div>
             <div class="md:hidden togglebar">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
         </nav>
     </section>
-    <!-- -banner-  -->
-     <section id="contactbanner">
-        <div class="relative sm:h-auto h-[300px]">
-            <img src="Assests/images/About/banner.png" alt="banner" class="w-[100%] h-[100%] object-cover">
-            <div class="absolute top-0 bg-[#000000ab] w-[100%] h-[100%] flex items-center justify-center">
-                <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-[Poppins] text-white font-bold">About Us</h1>
+    <!-- Signin  -->
+     <section id="signin" class="relative px-8 py-8 md:px-14 md:py-14 lg:px-20 lg:py-20">
+        <div>
+            <div class="md:w-[60%]  p-5 md:p-8 lg:w-[40%]  lg:p-10 mx-auto bg-[#f8edd1] rounded-lg">
+                <h2 class="text-4xl lg:text-5xl font-[recoleta] font-semibold text-[#725D68]">Sign in</h2>
+                <form action="" class="mt-5">
+                    <input type="email" placeholder="Email" class="px-3 py-2 w-[100%] outline-none font-[Poppins] font-medium mt-5">
+                    <input type="password" placeholder="password" class="px-3 py-2 w-[100%]  outline-none font-[Poppins] font-medium mt-5">
+                    <button type="button" class=" block bg-[#fe831d] py-2 w-[100%] font-[poppins] mt-5 font-medium text-white">Log in</button>
+                </form>
+                <p class="mt-5 sm:text-[16px] text-[14px] font-[Poppins] text-[#725D68]">Don't have an account ? <a href="signup.html" title="Signup">Sign Up</a></p>
             </div>
         </div>
-     </section>
-     <!-- About  -->
-     <section id="about" class="relative lg:px-20 lg:py-20 md:px-14 md:py-14 px-8 py-8 text-center">
-        <h2 class="text-5xl font-[recoleta] font-semibold mt-[10%]  sm:mt-[18%] lg:mt-[20%] xl:mt-[22%] mb-3 text-[#725D68] relative z-20">About <span class="text-[#fe831d]">Us</span></h2>
-        <p class=" font-[poppins] text-[#725D68] relative z-20">All ingredients are hand-picked, the fruits are manually cleaned and whole fruits are used in production. That’s the reason why we call it 'Handcrafted Ice Creams’. Since there are no preservatives in our ice cream, the shelf life of our product is just 60 days. When compared with other brands, which have a longer shelf life, it is a herculean effort to manufacture, distribute and sell our ice cream across the nation within 60 days. With more experience and better processes, we have been successful in overcoming various challenges to bring Scoopy to you, making every challenge worth it and after tasting Scoopy you surely would agree!</p>
-        <img src="Assests/images/layer.png" alt="layer" class="absolute top-0 left-0 w-[100%] z-10">
-        <div class="flex justify-between mt-10 md:flex-row flex-col md:gap-0 gap-5">
-            <div class="box bg-[#68e5f5] w-[100%] md:w-[45%] px-10 py-5 rounded-lg font-[Poppins] ">
-                <h2 class="text-4xl font-[recoleta] font-bold text-[#000000]">Mission</h2>
-                <p class="text-[#725D68]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque repudiandae eveniet dicta omnis eligendi perferendis, laborum quasi odit delectus quam nulla itaque saepe? Rerum, sequi. Alias consectetur maxime sit beatae?</p>
-            </div>
-            <div class="box bg-[#cefd76] w-[100%] md:w-[45%] px-10 py-5 rounded-lg font-[Poppins]">
-                <h2 class="text-4xl font-[recoleta] font-bold text-[#000000]">Vision</h2>
-                <p class="text-[#725D68]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque repudiandae eveniet dicta omnis eligendi perferendis, laborum quasi odit delectus quam nulla itaque saepe? Rerum, sequi. Alias consectetur maxime sit beatae?</p>
-            </div>
-        </div>
-        <h2 class="text-5xl font-[recoleta] font-semibold mt-8 md:mt-14 mb-3 text-[#725D68] relative z-20">Our  <span class="text-[#fe831d]">Process</span></h2>
-            <p class=" font-[poppins] text-[#725D68] relative z-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facere dolores magnam ullam, eius aut exercitationem! Quibusdam cum animi aut beatae dolore, est illum ab quae, aspernatur quas tenetur corrupti doloremque blanditiis nobis molestias voluptatum praesentium reprehenderit, soluta esse similique. Quod voluptatibus modi quas eveniet. Sint totam molestias, corrupti pariatur voluptas, quod temporibus quo obcaecati alias magni quis officiis. Veniam excepturi nesciunt aliquam vel, esse numquam iusto dolorem consequuntur inventore quam sunt consectetur minima illo architecto. Sint repudiandae ad distinctio quia nesciunt quo asperiores assumenda ipsam cupiditate voluptas qui doloribus illum, neque, accusamus quaerat rerum nihil maxime quisquam ex, facilis blanditiis eligendi error deleniti. Aperiam reprehenderit fugiat vel dignissimos natus alias culpa perspiciatis magnam voluptatibus? Eum quis iusto modi, cumque beatae optio, odio dicta dignissimos, nostrum sunt tempore eos? Quidem eveniet similique laboriosam id in, doloremque, tempora blanditiis unde temporibus at maiores. Deleniti possimus natus officia dolorum id, quod repudiandae omnis quisquam delectus illum cum laborum, magni veniam animi iste sit. Explicabo, labore unde. Quia ratione natus, eaque, perferendis accusamus labore cumque numquam totam laboriosam odit, quo ex doloribus earum commodi. Quis quo dolorum perferendis natus odio, esse pariatur adipisci itaque soluta facere deleniti optio inventore sint mollitia alias quam.</p>
      </section>
      <!-- footer  -->
      <section id="footer" class="px-8 py-8 md:px-14 md:py-14 lg:px-20 lg:py-20  bg-[#f8edd1]">
@@ -116,7 +103,7 @@
                         <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="index.html" title="Home">Home</a>
                     </li>
                     <li>
-                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="#" title="About">About</a>
+                        <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="about.html" title="About">About</a>
                     </li>
                     <li>
                         <a class="font-[recoleta] font-semibold text-[#725D68] hover:text-[#fe831d]" href="products.html" title="products">products</a>
@@ -162,7 +149,7 @@
     <!-- Owl  -->
      <script src="Assests/owl/js/owl.carousel.min.js"></script>
     <!-- script  -->
-    <!-- <script src="Assests/script.js"></script> -->
+    <script src="Assests/script.js"></script>
     <!-- Tailwind  -->
      <script src="Assests/Tailwind/index.min.js"></script>
     <script src="Assests/Tailwind/New.txt"></script>

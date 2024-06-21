@@ -37,8 +37,8 @@
                 </div>
             </div>
             <div class="nav__navigate flex gap-4 justify-center mt-5 text-2xl">
-                <a href="javascript:void(0)"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="signin.html"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
         <div class="absolute top-[5%] right-[15%] text-2xl cursor-pointer closebar">
@@ -46,31 +46,31 @@
         </div>
      </section>
     <!-- -Navbar-  -->
-    <section id="navbar" >
-        <nav class="flex py-4 px-8 md:px-14 lg:px-20 items-center justify-between">
+    <section id="navbar" class="sticky top-0 z-[999] shadow-2xl shadow-[#464646]">
+        <nav class="flex py-4 px-8 md:px-14 lg:px-20 items-center justify-between bg-[#f8edd1]">
             <a class="nav__logo " href="index.html" title="logo">
-                <h1 class="text-4xl font-bold ">Scoopy</h1>
+                <h1 class="text-4xl font-bold font-[recoleta] text-[#fe831d]">Scoopy</h1>
             </a>
-            <div class="nav__links md:flex gap-10 hidden">
+            <div class="nav__links md:flex gap-10 hidden text-[#725D68] font-[Poppins] font-medium">
                 <div class="nav__link active">
-                    <a href="#" title="Home">Home</a>
+                    <a href="#" title="Home" class="relative">Home</a>
                 </div>
                 <div class="nav__link">
-                    <a href="about.html" title="About">About</a>
+                    <a href="about.html" title="About" class="relative">About</a>
                 </div>
                 <div class="nav__link">
-                    <a href="products.html" title="products">products</a>
+                    <a href="products.html" title="products" class="relative">products</a>
                 </div>
                 <div class="nav__link">
-                    <a href="blog.html" title="Blog">Blog</a>
+                    <a href="blog.html" title="Blog" class="relative">Blog</a>
                 </div>
                 <div class="nav__link">
-                    <a href="contact.html" title="Contact">Contact</a>
+                    <a href="contact.html" title="Contact" class="relative">Contact</a>
                 </div>
             </div>
-            <div class="nav__navigate md:flex gap-4 hidden">
-                <a href="javascript:void(0)"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a>
+            <div class="nav__navigate md:flex gap-4 hidden text-[#725D68] font-medium font-[Poppins]">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="signin.html"><i class="fa-solid fa-user"></i></a>
             </div>
             <div class="md:hidden togglebar">
                 <i class="fa-solid fa-bars-staggered"></i>
@@ -78,17 +78,17 @@
         </nav>
     </section>
     <!-- -Banner- -->
-     <section id="banner" class="bg-red-500  relative">
-        <div class="banner__one p-52 lg:p-72 duration-700">
-            <div class="image absolute m-auto left-0 right-0 top-0 bottom-0 z-10 lg:w-max lg:h-max w-[40%] h-[40%]">
+     <section id="banner" class="bg-red-500  relative overflow-hidden">
+        <div class="banner__one p-52 lg:p-72 duration-700 bg-[#7B4B41]">
+            <div class="image absolute m-auto left-0 right-0 top-0 bottom-0 z-10 lg:w-max lg:h-max w-[40%] h-[40%] scale-[1.3]">
                 <img src="Assests/images/banner-2.png" alt="banner-1" class="w-full h-full bannerimg object-contain">
             </div>
-            <div class="overlay_one absolute m-auto left-0 right-0 top-0 bottom-0"></div>
+            <div class="overlay_one absolute m-auto left-0 right-0 top-0 bottom-0 w-[50%] h-[70%] rounded-full bg-[#ce9184] blur-[100px]"></div>
             <div class="extra absolute top-[-70px] opacity-55 left-[-50px] lg:left-10 scale-50 lg:scale-75">
-                <img src="Assests/images/cone.png" alt="">
+                <img src="Assests/images/cone.png" alt="cone">
             </div>
             <div class="extra absolute bottom-[5%] opacity-55 right-[-50px] lg:right-10 scale-50 lg:scale-75 rotate-90">
-                <img src="Assests/images/cone.png" alt="">
+                <img src="Assests/images/cone.png" alt="cone">
             </div>
         </div>
         <div class="navigate flex gap-1 absolute bottom-14 left-14">
@@ -114,7 +114,7 @@
         </div>
      </section>
     <!-- -Flavours- -->
-    <section id="flavours" class="bg-[#f8edd1] px-8 md:px-14 lg:px-20 ">
+    <section id="flavours" class="bg-[#f8edd1] px-8 md:px-14 lg:px-20 relative">
         <div class="owl-carousel owl-theme flavourscarousel py-8 lg:py-14">
             <div class="item">
                 <div class="box bg-[#78f578] rounded-t-full relative ">
